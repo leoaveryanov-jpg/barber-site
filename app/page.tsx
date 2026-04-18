@@ -29,7 +29,7 @@ export default function BarberHome() {
       {/* HERO */}
       <section className="relative h-[90vh] flex items-center justify-center text-center overflow-hidden pt-24">
         <img
-          src="/images/hero.jpg"
+          src="/images/hero.jpeg"
           alt="barbershop"
           className="absolute inset-0 w-full h-full object-cover"
         />
