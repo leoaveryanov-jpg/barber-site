@@ -29,7 +29,7 @@ export default function BarberHome() {
       {/* HERO */}
       <section className="relative h-[90vh] flex items-center justify-center text-center overflow-hidden pt-24">
         <img
-          src="https://via.placeholder.com/1920x1080"
+          src="/images/hero.jpg"
           alt="barbershop"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -83,6 +83,7 @@ export default function BarberHome() {
       {/* WORK */}
       <section id="work" className="px-6 md:px-20 pb-20">
         <h2 className="text-3xl font-bold text-center mb-10">Our Work</h2>
+
         <div className="grid md:grid-cols-3 gap-4">
           {[1, 2, 3].map((i) => (
             <motion.div
@@ -91,8 +92,8 @@ export default function BarberHome() {
               className="h-64 rounded-xl overflow-hidden bg-neutral-800"
             >
               <img
-                src={`https://via.placeholder.com/800x600?text=Work+${i}`}
-                alt="barber work"
+                src={`/images/work${i}.jpg`}
+                alt={`work ${i}`}
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -105,7 +106,11 @@ export default function BarberHome() {
         <h2 className="text-3xl font-bold text-center mb-10">Reviews</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {["Best haircut I’ve ever had", "Super clean fade", "Professional and fast service"].map((r, i) => (
+          {[
+            "Best haircut I’ve ever had",
+            "Super clean fade",
+            "Professional and fast service",
+          ].map((r, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
@@ -122,7 +127,9 @@ export default function BarberHome() {
       {/* CONTACT */}
       <section id="contact" className="py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Visit Us</h2>
-        <p className="text-neutral-400 mt-2">Open Mon-Sat • Walk-ins welcome</p>
+        <p className="text-neutral-400 mt-2">
+          Open Mon-Sat • Walk-ins welcome
+        </p>
         <button className="mt-6 px-6 py-3 bg-white text-black rounded-full hover:scale-105 transition">
           Get Directions
         </button>
